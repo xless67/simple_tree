@@ -9,7 +9,7 @@ $tree = new Tree();
 $tree->setBranches(3);                  // количество веток(узлов)
 $tree->setLeavesWeightPerBranch(3);     // максимальный вес листьев для веток (константа W)
 
-$leaves = [
+$leaves = [                             // создаем листья с весом
     new Leaf(2),
     new Leaf(4),
     new Leaf(3),
@@ -17,5 +17,4 @@ $leaves = [
 ];
 
 $tree->setLeaves($leaves);
-//$tree->listAllAvailableBranches();
 $tree->showTree();

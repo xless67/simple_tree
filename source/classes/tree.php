@@ -43,39 +43,7 @@ class Tree
 		        $this->getNextBranchWithoutLeaves()->setLeaves($tmp_leaves);
                 $tmp_leaves = [];
                 $tmp_weight = 0;
-        		var_dump('here');
 	        }
-        	
-        	
-        	
-	        /*
-            if ($tmp_weight + $leaves[$i]->getWeight() >= $this->max_leaves_weight) {
-                $this->getNextEmptyBranch()->setLeaves($tmp_leaves);
-                var_dump('here<br/>');
-                $tmp_leaves = [];
-                $tmp_weight = 0;
-            }
-            $tmp_leaves[] = $leaves[$i];
-            $tmp_weight += $leaves[$i]->getWeight();
-*/
-	        /*
-            var_dump($tmp_leaves);
-            echo '<br/>';
-            var_dump('tmp_weight:'.$tmp_weight);
-            echo '<br/>';
-            var_dump('new weight: '.$tmp_weight + $leaves[$i]->getWeight() .'; max-weight: '. $this->max_leaves_weight);
-            echo '<br/><br/>';
-*/
-
-//            if ($tmp_weight < $this->max_leaves_weight) {
-//                $tmp_leaves[] = $leaves[$i];
-//                $tmp_weight += $leaves[$i]->getWeight();
-//            }
-//            else {
-//                $this->getNextEmptyBranch()->setLeaves($tmp_leaves);
-//                $tmp_leaves = [];
-//                $tmp_weight = 0;
-//            }
         }
     }
 
